@@ -10,6 +10,7 @@
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 20vh;
 }
 
 .header-menu {
@@ -39,6 +40,11 @@
   width: 100%;
 }
 
+#logo_header {
+  height: 15vh;
+  width: auto;
+}
+
 @media (max-width: 800px) {
   .header-menu {
     gap: 20px;
@@ -64,4 +70,10 @@
     padding: 8px 12px;
     font-size: 14px;
   }
+  
+  #logo_header {
+    height: 10vh;
+    width: auto;
+  }
+  
 }

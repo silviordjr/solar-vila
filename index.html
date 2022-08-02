@@ -10,60 +10,66 @@
 
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    //script para acessibilidade e js desativado.
+    document.documentElement.className += ' js'
+  </script>
 </head>
 
 <body>
   <header class="header-bg">
     <div class="header container">
       <a href="./">
-        <img src="./img/empresa/Ativo 8.png" width="136" height="32" alt="Bikcraft">
+        <img id="logo_header" src="./img/empresa/Ativo 9.png" width="136px" height="32px" alt="Bikcraft">
       </a>
 
       <nav aria-label="primaria">
-        <ul class="header-menu font-1-m cor-0">
-          <li><a href="./bicicletas.html">Pacotes</a></li>
-          <li><a href="./seguros.html">Portfólio</a></li>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+        <ul data-menu="list"  class="header-menu font-1-m cor-0" id="menu">
+          <li><a href="./camping.html">Camping</a></li>
+          <li><a href="./hostel.html">Hostel</a></li>
+          <li><a href="./eventos.html">Eventos</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="introducao-bg">
+  <main class="introducao-bg js-scroll">
     <div class="introducao container">
       <div class="introducao-conteudo">
         <h1 class="font-1-xxl cor-0">Lorem Ipsum Lorem<span class="cor-p1">.</span></h1>
         <p class="font-2-l cor-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <a class="botao" href="./bicicletas.html">Escolher Pacote</a>
+        <a class="botao" href="./contato.html">Escolher Pacote</a>
       </div>
       <picture>
         <source media="(max-width: 800px)" srcset="./img/fotos/introducao.jpg">
-        <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
+        <img src="./img/fotos/introducao.jpg" width="1280px" height="1600px" alt="Bicicleta elétrica preta.">
       </picture>
     </div>
   </main>
 
-  <article class="bicicletas-lista">
+  <article class="bicicletas-lista js-scroll">
     <h2 class="container font-1-xxl">escolher pacote<span class="cor-p1">.</span></h2>
 
     <ul>
       <li>
-        <a href="./bicicletas/magic.html">
-          <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta preta" width="920" height="1040">
+        <a href="./camping.html">
+          <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta preta" width="920px" height="1040px">
           <h3 class="font-1-xl">Camping</h3>
           <span class="font-2-m cor-8">R$ 2499</span>
         </a>
       </li>
       <li>
-        <a href="./bicicletas/nimbus.html">
-          <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta preta" width="920" height="1040">
+        <a href="./hostel.html">
+          <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta preta" width="920px" height="1040px">
           <h3 class="font-1-xl">Hostel</h3>
           <span class="font-2-m cor-8">R$ 4999</span>
         </a>
       </li>
       <li>
-        <a href="./bicicletas/nebula.html">
-          <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta preta" width="920" height="1040">
+        <a href="./eventos.html">
+          <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta preta" width="920px" height="1040px">
           <h3 class="font-1-xl">Eventos</h3>
           <span class="font-2-m cor-8">R$ 3999</span>
         </a>
@@ -71,7 +77,7 @@
     </ul>
   </article>
 
-  <article class="tecnologia-bg">
+  <article class="tecnologia-bg js-scroll">
     <div class="tecnologia container">
       <div class="tecnologia-conteudo">
         <span class="font-2-l-b cor-5">Eventos Feitos para você</span>
@@ -97,7 +103,7 @@
     </div>
   </article>
 
-  <section class="parceiros" aria-label="Nossos Parceiros">
+  <section class="parceiros js-scroll" aria-label="Nossos Parceiros">
     <h2 class="container font-1-xxl">nossos parceiros<span class="cor-p1">.</span></h2>
 
     <ul>
@@ -157,7 +163,9 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/empresa/Ativo 11.png" width="136" height="32" alt="Bikcraft">
+      <div class="imgcontainer">
+        <img src="./img/empresa/Ativo 8.png" width="136" height="32" alt="Bikcraft">
+      </div>
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -182,16 +190,19 @@
         <h3 class="font-2-l-b cor-0">Informações</h3>
         <nav>
           <ul class="font-1-m cor-5">
-            <li><a href="./bicicletas.html">Pacotes</a></li>
-            <li><a href="./seguros.html">Portfólio</a></li>
+            <li><a href="./camping.html">Camping</a></li>
+            <li><a href="./hostel.html">Hostel</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
             <li><a href="./contato.html">Contato</a></li>
-            <li><a href="./termos.html">Termos e Condições</a></li>
+            <li><a href="./equipe.html">Nossa Equipe</a></li>
           </ul>
         </nav>
       </div>
       <p class="footer-copy font-2-m cor-6">Solar da Vila © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

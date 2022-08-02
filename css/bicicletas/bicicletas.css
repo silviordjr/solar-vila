@@ -1,5 +1,5 @@
 .bicicletas-bg {
-  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+  background: linear-gradient(to right, var(--cor-12) 30%, var(--cor-11) 0%);
 }
 
 .bicicletas {
@@ -78,6 +78,9 @@
 
 @media (max-width: 800px) {
   .bicicletas-bg {
+    background: var(--cor-12);
+  }
+  .bicicletas-bg .bicicletas-imagem span {
     background: var(--cor-11);
   }
   .bicicletas {

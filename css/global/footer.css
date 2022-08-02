@@ -8,6 +8,7 @@
   gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+  height: 50vh;
 }
 
 .footer h3 {
@@ -23,7 +24,7 @@
   display: block;
   max-width: 360px;
   height: 2px;
-  background: var(--cor-11);
+  background: var(--cor-p1);
   margin-top: 16px;
 }
 
@@ -45,12 +46,19 @@
   margin-top: 40px;
 }
 
+.imgcontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @media (max-width: 800px) {
-  .footer > img {
+  .imgcontainer > img {
     display: none;
   }
   .footer {
     grid-template-columns: 1fr 1fr;
+    height: 100vh;
   }
 }
 
