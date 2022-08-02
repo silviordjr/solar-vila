@@ -96,6 +96,14 @@
   color: var(--cor-6);
 }
 
+.img_bottom {
+  height: 45vh;
+  margin-top: 7vh;
+}
+
+.img_bottom img {
+  height: 100%;
+}
 @media (max-width: 800px) {
   .bicicleta {
     grid-template-columns: 1fr;
