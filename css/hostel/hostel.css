@@ -1,8 +1,8 @@
-.bicicletas-bg {
+.hostel-bg {
   background: linear-gradient(to right, var(--cor-12) 30%, var(--cor-11) 0%);
 }
 
-.bicicletas {
+.hostel {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -11,15 +11,15 @@
   background: url("../../img/dec/top-right.svg") no-repeat top 40px right 20px;
 }
 
-.bicicletas-imagem {
+.hostel-imagem {
   display: grid;
 }
 
-.bicicletas-imagem img {
+.hostel-imagem img {
   grid-area: 1/1;
 }
 
-.bicicletas-imagem span {
+.hostel-imagem span {
   grid-area: 1/1;
   place-self: start end;
   margin-top: 20px;
@@ -29,22 +29,22 @@
   border-radius: 4px 0 0 4px;
 }
 
-.bicicletas-conteudo {
+.hostel-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
 }
 
-.bicicletas h2,
-.bicicletas p {
+.hostel h2,
+.hostel p {
   grid-column: 1/-1;
 }
 
-.bicicletas h2 {
+.hostel h2 {
   margin-bottom: 20px;
 }
 
-.bicicletas h2::before {
+.hostel h2::before {
   content: "";
   display: block;
   width: 12px;
@@ -53,37 +53,37 @@
   margin-bottom: 8px;
 }
 
-.bicicletas p {
+.hostel p {
   margin-bottom: 32px;
 }
 
-.bicicletas a {
+.hostel a {
   place-self: end;
 }
 
-.bicicletas li {
+.hostel li {
   display: flex;
   align-items: center;
 }
 
-.bicicletas ul {
+.hostel ul {
   display: grid;
   gap: 16px;
 }
 
-.bicicletas-conteudo img {
+.hostel-conteudo img {
   width: 24px;
   margin-right: 8px;
 }
 
 @media (max-width: 800px) {
-  .bicicletas-bg {
+  .hostel-bg {
     background: var(--cor-12);
   }
-  .bicicletas-bg .bicicletas-imagem span {
+  .hostel-bg .hostel-imagem span {
     background: var(--cor-11);
   }
-  .bicicletas {
+  .hostel {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-top: 40px;
@@ -92,15 +92,15 @@
 }
 
 @media (max-width: 600px) {
-  .bicicletas-conteudo {
+  .hostel-conteudo {
     grid-template-columns: 1fr;
   }
-  .bicicletas ul {
+  .hostel ul {
     font-size: 1rem;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 32px;
   }
-  .bicicletas a {
+  .hostel a {
     place-self: start;
   }
 }
