@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
-  gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -12,9 +11,9 @@
 }
 
 .bicicleta-imagens {
+  grid-column: 1 / 3;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .bicicleta-imagens img {
@@ -24,6 +23,10 @@
 
 .bicicleta-imagens img:first-child {
   min-width: 100%;
+}
+
+.bicicleta-conteudo {
+  grid-column: 1 / 3;
 }
 
 .bicicleta-conteudo > p {
@@ -104,6 +107,7 @@
 .img_bottom img {
   height: 100%;
 }
+
 @media (max-width: 800px) {
   .bicicleta {
     grid-template-columns: 1fr;

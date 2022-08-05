@@ -13,7 +13,15 @@
 }
 
 .perguntas dl > div:nth-child(odd) {
-  background-color: var(--cor-1);
+  background-color: var(--cor-4);
+}
+
+.perguntas dl > div:nth-child(even) {
+  color: var(--cor-1);
+}
+
+.perguntas dl > div:nth-child(even) dd {
+  color: var(--cor-1);
 }
 
 .perguntas dt {
