@@ -1,6 +1,6 @@
 .lojas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0 40px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -44,6 +44,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+.lojas h2 {
+  color: var(--cor-11);
+}
+
+.lojas-conteudo h3 {
+  color: var(--cor-11) ;
 }
 
 @media (max-width: 800px) {
