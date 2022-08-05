@@ -1,8 +1,29 @@
 .depoimento {
+   display: none;
+}
+
+.depoimento.primeiro.ativo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--cor-p1);
   overflow: hidden;
+  animation: slide-quote 1s forwards;
+}
+
+.depoimento.segundo.ativo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-a1);
+  overflow: hidden;
+  animation: slide-quote 1s forwards;
+}
+
+.depoimento.terceiro.ativo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-a2);
+  overflow: hidden;
+  animation: slide-quote 1s forwards;
 }
 
 .depoimento img {
@@ -45,6 +66,18 @@
   content: "”";
 }
 
+@keyframes slide-quote {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+
 @media (min-width: 1200px) {
   .depoimento img {
     max-height: 520px;
@@ -52,7 +85,17 @@
 }
 
 @media (max-width: 800px) {
-  .depoimento {
+  .depoimento.primeiro.ativo {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 120vh;
+  }
+  .depoimento.segundo.ativo {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 120vh;
+  }
+  .depoimento.terceiro.ativo {
     grid-template-columns: 1fr;
     text-align: center;
     height: 120vh;

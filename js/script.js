@@ -2,6 +2,7 @@ import initMenuMobile from './modules/menuMobile.js';
 import { initAnimacaoScroll } from './modules/scroll.js';
 import {SlideNav} from "./modules/slide.js";
 import getActivePage from './modules/getActivePage.js';
+import changeQuote from './modules/changeQuote.js';
 
 const slide = new SlideNav ('.slide', '.wrapper')
 
@@ -19,3 +20,4 @@ if (hostel || camping || eventos){
 initMenuMobile()
 initAnimacaoScroll()
 getActivePage()
+changeQuote(10000)
