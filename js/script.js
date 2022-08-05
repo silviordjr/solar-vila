@@ -11,6 +11,7 @@ const camping = document.querySelector('#camping')
 const eventos = document.querySelector('#eventos')
 
 if (hostel || camping || eventos){
+    console.log('iniciou po')
     slide.init()
     slide.onResize(true)
     slide.addControl('.custom-control')
