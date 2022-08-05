@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Orçamento | Bikcraft</title>
-  <meta name="description" content="Orçamento.">
+  <title>Solar da Villa | Eventos</title>
+  <meta name="description" content="Seguros.">
 
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
@@ -16,7 +16,7 @@
   </script>
 </head>
 
-<body id="orcamento">
+<body id="eventos">
   <header class="header-bg">
     <div class="header container">
       <a href="./">
@@ -35,122 +35,102 @@
     </div>
   </header>
 
-  <main>
+  <main class="seguros-bg">
     <div class="titulo-bg">
       <div class="titulo container">
-        <p class="font-2-l-b cor-5">Cotações no seu email</p>
-        <h1 class="font-1-xxl cor-0">solicite um orçamento<span class="cor-p1">.</span></h1>
+        <p class="font-2-l-b cor-5">Aproveite o melhor de Milagres com economia e conforto</p>
+        <h1 class="font-1-xxl cor-0">conheça nossos eventos<span class="cor-p1">.</span></h1>
       </div>
     </div>
 
-    <form class="orcamento container" action="./orcamento.html">
-      <div class="orcamento-produto">
-        <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
-
-        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
-        <label for="bikcraft">Bikcraft</label>
-
-        <input type="radio" name="tipo" value="seguro" id="seguro">
-        <label for="seguro">Seguro</label>
-
-        <div class="orcamento-conteudo" id="orcamento-bikcraft">
-          <h2 class="font-1-xs cor-5">Escolha a sua</h2>
-
-          <input type="radio" name="produto" value="nimbus" id="nimbus">
-          <label for="nimbus">Nimbus Stark <span>R$ 4999</span></label>
-          <div class="orcamento-detalhes">
-            <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt=""> Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt=""> Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt=""> 50 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt=""> Rastreador</li>
-            </ul>
-            <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta preta">
-          </div>
-
-          <input type="radio" name="produto" value="magic" id="magic">
-          <label for="magic">Magic Might <span>R$ 2499</span></label>
-          <div class="orcamento-detalhes">
-            <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt=""> Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt=""> Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt=""> 45 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt=""> Rastreador</li>
-            </ul>
-            <img src="./img/bicicletas/magic.jpg" alt="Bicicleta preta">
-          </div>
-
-          <input type="radio" name="produto" value="nebula" id="nebula">
-          <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
-          <div class="orcamento-detalhes">
-            <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt=""> Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt=""> Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt=""> 40 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt=""> Rastreador</li>
-            </ul>
-            <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta branca">
-          </div>
-
-        </div>
-
-        <div class="orcamento-conteudo" id="orcamento-seguro">
-          <h2 class="font-1-xs cor-5">Escolha o plano</h2>
-
-          <input type="radio" name="produto" value="prata" id="prata">
-          <label for="prata">Prata <span>R$ 199</span></label>
-
-          <input type="radio" name="produto" value="ouro" id="ouro">
-          <label for="ouro">Ouro <span>R$ 299</span></label>
-        </div>
-      </div>
-      <div class="orcamento-dados form">
-        <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
-        <div>
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
-        </div>
-        <div>
-          <label for="sobrenome">Sobrenome</label>
-          <input type="text" id="sobrenome" name="sobrenome">
-        </div>
-        <div class="col-2">
-          <label for="cpf">CPF</label>
-          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
-        </div>
-        <div class="col-2">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-        </div>
-        <h2 class="font-1-xs cor-9 col-2">entrega</h2>
-        <div>
-          <label for="cep">CEP</label>
-          <input type="text" id="cep" name="cep">
-        </div>
-        <div>
-          <label for="numero">Número</label>
-          <input type="text" id="numero" name="numero">
-        </div>
-        <div>
-          <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" name="logradouro">
-        </div>
-        <div>
-          <label for="bairro">Bairro</label>
-          <input type="text" id="bairro" name="bairro">
-        </div>
-        <div>
-          <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" name="cidade">
-        </div>
-        <div>
-          <label for="estado">Estado</label>
-          <input type="text" id="estado" name="estado">
-        </div>
-        <button class="botao col-2">Solicitar Orçamento</button>
-      </div>
-    </form>
+    <div class="seguros container wrapper">
+      <ul class="slide">
+        <li><img src="../img/hostel/quartos_slide/quarto1.avif" alt=""></li>
+        <li><img src="../img/hostel/quartos_slide/quarto2.avif" alt=""></li>
+        <li><img src="../img/hostel/quartos_slide/quarto3.avif" alt=""></li>
+        <li><img src="../img/hostel/quartos_slide/quarto1.avif" alt=""></li>
+        <li> <img src="../img/hostel/quartos_slide/quarto2.avif" alt=""></li>
+        <li><img src="../img/hostel/quartos_slide/quarto3.avif" alt=""></li>
+      </ul>
+    </div>
+    <ul class="custom-control">
+      <li><img src="../img/hostel/quartos_slide/quarto1.avif" alt=""></li>
+      <li><img src="../img/hostel/quartos_slide/quarto2.avif" alt=""></li>
+      <li><img src="../img/hostel/quartos_slide/quarto3.avif" alt=""></li>
+      <li><img src="../img/hostel/quartos_slide/quarto1.avif" alt=""></li>
+      <li><img src="../img/hostel/quartos_slide/quarto2.avif" alt=""></li>
+      <li><img src="../img/hostel/quartos_slide/quarto3.avif" alt=""></li>
+    </ul>
   </main>
+
+  <article class="vantagens-bg">
+    <div class="vantagens container">
+      <h2 class="font-1-xxl cor-0">o que oferecemos<span class="cor-p1">.</span></h2>
+      <ul>
+        <li>
+          <img src="./img/icones/eletrica.svg" alt="">
+          <h3 class="font-1-l cor-0">Lorem Ipsum</h3>
+          <p class="font-2-s cor-5">There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.</p>
+        </li>
+        <li>
+          <img src="./img/icones/carbono.svg" alt="">
+          <h3 class="font-1-l cor-0">What is Lorem Ipsum?</h3>
+          <p class="font-2-s cor-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+        </li>
+        <li>
+          <img src="./img/icones/sustentavel.svg" alt="">
+          <h3 class="font-1-l cor-0">Why do we use it?</h3>
+          <p class="font-2-s cor-5">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </li>
+        <li>
+          <img src="./img/icones/rastreador.svg" alt="">
+          <h3 class="font-1-l cor-0">Where does it come from?</h3>
+          <p class="font-2-s cor-5">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock.</p>
+        </li>
+        <li>
+          <img src="./img/icones/seguro.svg" alt="">
+          <h3 class="font-1-l cor-0">Where can I get some?</h3>
+          <p class="font-2-s cor-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </li>
+        <li>
+          <img src="./img/icones/velocidade.svg" alt="">
+          <h3 class="font-1-l cor-0">Ipsum Lorem</h3>
+          <p class="font-2-s cor-5">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="perguntas container">
+    <h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></h2>
+
+    <dl>
+      <div>
+        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
+        <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+    </dl>
+  </article>
 
   <footer class="footer-bg">
     <div class="footer container">
