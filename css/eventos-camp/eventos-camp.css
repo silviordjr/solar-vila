@@ -1,8 +1,9 @@
-.seguros-bg {
+.eventos-camp-bg {
   background: white;
+  height: 100vh;
 }
 
-.seguros {
+.eventos-camp {
   padding-top: 20px;
   padding-bottom: 20px;
   display: grid;
@@ -11,15 +12,15 @@
   align-items: center;
 }
 
-#seguros .seguros {
+#eventos-camp .eventos-camp {
   padding-top: 0px;
 }
 
-.seguros h2 {
+.eventos-camp h2 {
   grid-column: 1/-1;
 }
 
-.seguros-item {
+.eventos-camp-item {
   background-color: var(--cor-12);
   padding: 32px 32px 32px 60px;
   display: grid;
@@ -27,32 +28,32 @@
   border-radius: 4px;
 }
 
-.seguros-item h3 {
+.eventos-camp-item h3 {
   margin-bottom: 40px;
 }
 
-.seguros-item span {
+.eventos-camp-item span {
   grid-column: 2;
   display: block;
   text-align: right;
 }
 
-.seguros-item ul {
+.eventos-camp-item ul {
   grid-column: 1/-1;
   margin-bottom: 32px;
 }
 
-.seguros-item li {
+.eventos-camp-item li {
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.seguros-item li + li {
+.eventos-camp-item li + li {
   margin-top: 20px;
 }
 
-.seguros-item li::before {
+.eventos-camp-item li::before {
   content: "";
   display: inline-block;
   width: 13px;
@@ -62,12 +63,12 @@
   left: -21px;
 }
 
-.seguros-item a {
+.eventos-camp-item a {
   grid-column: 1/-1;
 }
 
 @media (max-width: 800px) {
-  .seguros {
+  .eventos-camp {
     grid-template-columns: 1fr;
   }
 }
