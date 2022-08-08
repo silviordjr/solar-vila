@@ -20,8 +20,8 @@
 @import "./hostel/hostel.css";
 
 /* Bicicleta */
-@import "./bicicleta/bicicleta.css";
-@import "./bicicleta/seguro.css";
+@import "./hostel-serv/hostel-serv.css";
+@import "./hostel-serv/seguro.css";
 
 /* Seguros */
 @import "./seguros/seguros.css";
