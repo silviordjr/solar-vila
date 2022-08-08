@@ -24,9 +24,9 @@
 @import "./hostel-serv/seguro.css";
 
 /* Seguros */
-@import "./seguros/seguros.css";
-@import "./seguros/vantagens.css";
-@import "./seguros/perguntas.css";
+@import "./eventos-camp/eventos-camp.css";
+@import "./eventos-camp/vantagens.css";
+@import "./eventos-camp/perguntas.css";
 
 /* Contato */
 @import "./contato/contato.css";
