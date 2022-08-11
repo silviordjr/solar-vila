@@ -21,7 +21,6 @@
 
 /* Bicicleta */
 @import "./hostel-serv/hostel-serv.css";
-@import "./hostel-serv/seguro.css";
 
 /* Seguros */
 @import "./eventos-camp/eventos-camp.css";
@@ -32,9 +31,6 @@
 @import "./contato/contato.css";
 @import "./contato/lojas.css";
 
-/* Termos */
-@import "./termos/termos.css";
-
 /* menu mobile */
 
-@import "./utilidades/menu_mobile.css"
+@import "./utilidades/menu-mobile.css";
